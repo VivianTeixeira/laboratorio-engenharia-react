@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Contador}  from './Contador';
+import {Contador}  from './components/aula3/Contador';
 
 function App() {
   return (

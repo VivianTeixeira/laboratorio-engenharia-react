@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Button } from "./components/Button"
+import { Button } from "../Button"
 import './Contador.css'
 import Image1 from './assets/man.png'
 import Image2 from './assets/woman.png'
