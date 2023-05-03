@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Contador}  from './components/aula3/Contador';
+import {Profile} from './components/aula3/Profile';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </header>
     </div>
     <Contador />
+    <Profile />
     </>
   );
 }
