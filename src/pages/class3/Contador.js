@@ -1,37 +1,51 @@
-import React from "react";
-import "./Contador.css";
+import { useEffect, useState } from "react"
+import { Button } from "./Button"
+import './Contador.css'
+import Image1 from './man.png'
+import Image2 from './woman.png'
 
-const Contador = ({ value, onChange }) => {
-  const incrementCount = () => {
-    onChange(value + 1);
-  };
+export function Contador() {
 
-  const decrementCount = () => {
+    let [qtdeman, setQtdeman] = useState(0)
+    let [qtdewoman, setqtdewoman] = useState(0)
+    let [total, setTotal] = useState(0)
 
-      onChange(value - 1);
-    
-  };
+    useEffect(() => {
+        setTotal(qtdeman + qtdewoman)
+    }, [qtdeman, qtdewoman])
 
-  return (
-    <div className="contador">
-      <div className="contador-buttons-container">
-        <button className="contador-button-increment" onClick={incrementCount}>
-          +
-        </button>
-        <button className="contador-button-decrement" onClick={decrementCount}>
-          -
-        </button>
-      </div>
-      <div className="contador-input-container">
-        <input
-          id="contador-input"
-          type="number"
-          value={value}
-          onChange={(e) => onChange(parseInt(e.target.value))}
-        />
+    function Zerar() {
+        setQtdeman(0)
+        setqtdewoman(0)
+    }
+
+    return (
+  <div class="avatar-container">
+    <div class="total-container">
+      <h2 class="total-button-container">
+        <span>Total: {total}</span>
+        <br></br>
+        <button class="reset-button" onClick={Zerar}>Reset</button>
+      </h2>
+    </div>
+    <div>
+      <img src={Image1} alt={'Avatar Man'} class="avatar" />
+      <div class="counter">
+        <Button status='add' onClick={() => setQtdeman(qtdeman + 1)} />
+        <p class="count">{qtdeman}</p>
+        <Button status='decrementar' onClick={() => setQtdeman(qtdeman - 1)} />
       </div>
     </div>
-  );
-};
+    <div>
+      <img src={Image2} alt={'Avatar Woman'} class="avatar" />
+      <div class="counter">
+        <Button status='add' onClick={() => setqtdewoman(qtdewoman + 1)} />
+        <p class="count">{qtdewoman}</p>
+        <Button status='decrementar' onClick={() => setqtdewoman(qtdewoman - 1)} />
+      </div>
+    </div>
+  </div>
+)
 
-export default Contador;
+
+}

@@ -1,62 +1,66 @@
-.contador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .contador label {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .contador-input-container {
-    display: flex;
-    align-items: center;
+.avatar-container {
+    /* display: flex; */
     justify-content: center;
-  }
+    align-items: flex-start;
+    flex-wrap: wrap;
+  } 
   
-  .contador input {
-    font-size: 2rem;
-    padding: 0.5rem;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-    width: 4rem;
-    text-align: center;
-  }
   
-  .contador-buttons-container {
+  .total-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    margin-top: 0.5rem;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
   
-  .contador-button-increment,
-  .contador-button-decrement {
-    font-size: 2rem;
-    padding: 0.5rem;
+  .total {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .reset-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
   }
   
-  .contador-button-increment {
-    background-color: green;
+  .reset-button:hover {
+    background-color: #c82333;
   }
   
-  .contador-button-decrement {
-    background-color: red;
+  .avatar-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
   }
   
-  .contador-button-increment:hover {
-    background-color: #006400;
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .contador-button-decrement:hover {
-    background-color: #8b0000;
+  .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .count {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
   }
