@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Contador}  from './components/aula3/Contador';
-import {Profile} from './components/aula3/Profile';
+import {Profile} from './components/aula4/Profile';
 
 function App() {
   return (
