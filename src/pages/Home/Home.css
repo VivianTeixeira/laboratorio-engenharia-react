@@ -12,14 +12,14 @@ body, p, ul, ol, li {
 
 /* Estilo do link */
 a {
-  color: #0077cc;
+  color: #000000;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
 /* Efeito de hover no link */
 a:hover {
-  color: #004499;
+  color: #000000;
   text-decoration: underline;
 }
 
