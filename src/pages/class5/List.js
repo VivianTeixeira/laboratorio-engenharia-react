@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
+
 
 let nextId = 0;
 export default function ListClass5() {
@@ -20,6 +22,9 @@ export default function ListClass5() {
             <li key={artist.id}>{artist.name}</li>
         ))}
       </ul>
+      <div>
+            <Link to="/">Voltar a home</Link>
+      </div>
     </>
   );
 }

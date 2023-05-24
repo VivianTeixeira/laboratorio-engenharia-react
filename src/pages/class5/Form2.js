@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Form2() {
   const [person, setPerson] = useState({
@@ -41,6 +42,9 @@ export default function Form2() {
       <p>
         {person.firstName} {person.lastName} {person.email}{" "}
       </p>
+      <div>
+            <Link to="/">Voltar a home</Link>
+      </div>
     </>
   );
 }

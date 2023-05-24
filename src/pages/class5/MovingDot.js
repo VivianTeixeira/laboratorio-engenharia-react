@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function MovingDot() {
   const [position, setPosition] = useState({
@@ -27,6 +28,9 @@ export default function MovingDot() {
           height: 20,
         }}
       ></div>
+      <div>
+          <Link to="/">Voltar a home</Link>
+      </div>
     </div>
   );
 }

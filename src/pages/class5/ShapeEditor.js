@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 let initialShapes = [
   { id: 0, type: "circle", x: 50, y: 100 },
@@ -37,8 +38,11 @@ export default function ShapeEditor() {
             width: 20,
             height: 20,
           }}
-        ></div>
+          ></div>
       ))}
+          <div>
+          <Link to="/">Voltar a home</Link>
+          </div>
     </>
   );
 }

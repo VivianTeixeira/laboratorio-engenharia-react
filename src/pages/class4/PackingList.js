@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Item({name, isPacked}) {
     let itemContent = name;
     if(isPacked) {
@@ -20,6 +22,9 @@ export default function PackingList() {
                 <Item isPacked={true} name="Space Suit"/>
                 <Item isPacked={true} name="Helmet with a golden leaf"/>
                 <Item isPacked={false} name="Photo of Tam"/>
+            <div>
+            <Link to="/">Voltar a home</Link>
+        </div>
             </ul>
         </section>
     )

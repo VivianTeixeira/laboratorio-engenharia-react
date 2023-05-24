@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function CounterAula5() {
   const [number, setNumber] = useState(0);
@@ -14,6 +15,9 @@ export default function CounterAula5() {
       >
         Increment Number
       </button>
+        <div>
+            <Link to="/">Voltar a home</Link>
+        </div>
     </>
   );
 }

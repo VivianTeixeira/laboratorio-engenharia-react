@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { people } from "./data.js";
 import { getImageUrl } from "./utils.js";
 
@@ -13,5 +14,8 @@ export default function ListClass4() {
   ));
   return <ul>
     {listItems}
+      <div>
+            <Link to="/">Voltar a home</Link>
+        </div>
   </ul>
 }

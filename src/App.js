@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import Relogio from "./pages/class2/lesson1";
 import Letreiro from "./pages/class2/lesson2";
 
-import ContadorGenero from "./pages/class3";
+// import ContadorGenero from "./pages/class3";
 
 import Gallery from "./pages/class4/PrimeiroComponente";
 import TodoListAula4 from "./pages/class4/TodoListAula4";
@@ -31,7 +31,7 @@ function App() {
         <Route path="/class2/atividade1" element={<Relogio />} />
         <Route path="/class2/atividade2" element={<Letreiro />} />
         {/* Aula 3 */}
-        <Route path="/class3/atividade1" element={<ContadorGenero />} />
+        {/* <Route path="/class3/atividade1" element={<ContadorGenero />} /> */}
         {/* Aula 4 */}
         <Route path="/class4/atividade1" element={<Gallery />} />
         <Route path="/class4/atividade2" element={<TodoListAula4 />} />

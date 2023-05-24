@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Form3() {
   const [person, setPerson] = useState({
@@ -68,6 +69,9 @@ export default function Form3() {
         (localed in {person.artwork.city})
       </p>
       <img src={person.artwork.image} alt={person.artwork.title}/>
+      <div>
+            <Link to="/">Voltar a home</Link>
+      </div>
     </>
   );
 }

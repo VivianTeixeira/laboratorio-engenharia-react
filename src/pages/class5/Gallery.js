@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { useState, useEffect } from "react";
 import { sculptureList } from "./data";
 import Clock from "./Clock";
@@ -46,6 +48,9 @@ export default function GalleryAula5() {
       <Gallery />
       <Gallery />
       <Clock time={time.toLocaleTimeString()} />
+      <div>
+            <Link to="/">Voltar a home</Link>
+        </div>
     </div>
   );
 }

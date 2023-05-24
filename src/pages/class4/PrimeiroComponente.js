@@ -1,4 +1,6 @@
 import Avatar from "./Avatar";
+import { Link } from 'react-router-dom';
+
 
 
 function Card({children}) {
@@ -23,6 +25,7 @@ export default function Gallery() {
     <section>
       <h1>Amazing scientits</h1>
       <Profile />
+      <Link to="/">Voltar a home</Link>
     </section>
   );
 }

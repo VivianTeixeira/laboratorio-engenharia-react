@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 
 export default function FormClass5() {
@@ -22,6 +23,9 @@ export default function FormClass5() {
             </label>
             <textarea placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)}/>
             <button type="submit">Send</button>
+            <div>
+            <Link to="/">Voltar a home</Link>
+            </div>
         </form>
     )
 }

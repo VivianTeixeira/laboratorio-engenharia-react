@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function Button({ onClick, children }) {
     return (
       <button
@@ -45,6 +46,9 @@ function Button({ onClick, children }) {
           onUploadImage={() => alert("Uploading...")}
         />
         <SignUp />
+      <div>
+      <Link to="/">Voltar a home</Link>
+      </div>
       </div>
     );
   }

@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="container">
       <h1>Laboratório de Engenharia de Software</h1>
-      <h2>Vivian Teixeira</h2>
+      <h1>Vivian Teixeira</h1>
       <div className="row">
         <div className="offset icon-box">
           <h3 className="title">Class 2</h3>

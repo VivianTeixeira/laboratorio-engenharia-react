@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 let initialArtists = [
   {
@@ -35,6 +36,9 @@ export default function List2Aula5() {
          </li>
         ))}
       </ul>
+      <div>
+            <Link to="/">Voltar a home</Link>
+      </div>
     </>
   );
 }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const person = {
     name: "Gregorio Y. Zara",
     theme: {
@@ -20,7 +22,11 @@ export default function TodoListAula4() {
             <li>Improve the video phone</li>
             <li>Prepare aeronautics lectures</li>
             <li>Work on alcohol-fuelled engine</li>
+            <div>
+            <Link to="/">Voltar a home</Link>
+        </div>
         </ul>
     </div>
+    
     )
 }
