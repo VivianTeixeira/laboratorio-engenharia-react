@@ -69,8 +69,48 @@ function Home() {
           <div>
             <Link to="/class5/atividade10">Activity 10: Shape Editor</Link>
           </div>
+          <div>
+            <Link to="/class5/atividade11">Activity 11: Counter List</Link>
+          </div>
+          <div>
+            <Link to="/class5/atividade12">Activity 12: List 3</Link>
+          </div>
+          <div>
+            <Link to="/class5/atividade13">Activity 13: List 4</Link>
+          </div>
+          <div>
+            <Link to="/class5/atividade14">Activity 14: BucketList</Link>
+          </div>
         </div>
+        <div className="offset icon-box">
+          <h3 className="title">Class 6</h3>
+          <div>
+            <Link to="/class6/atividade1">Activity 1: Form Quiz</Link>
+          </div>
+          <div>
+            <Link to="/class6/atividade2">Activity 2: Form Ticket</Link>
+          </div>
+          <div>
+            <Link to="/class6/atividade3">Activity 3: Accordion</Link>
+          </div>
+          <div>
+            <Link to="/class6/atividade4">Activity 4: Messenger</Link>
+          </div>
+          </div>
+          <div className="offset icon-box">
+          <h3 className="title">Activity 5</h3>
+          <div>
+            <Link to="/activity5">Calculadora</Link>
+          </div>
+      
+        </div>
+        <div className="offset icon-box">
+          <h3 className="title">Activity 6</h3>
+          <div>
+            <Link to="/activity6">Jogo da memória</Link>
+          </div>
       </div>
+    </div>
     </div>
   );
 }

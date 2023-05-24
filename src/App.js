@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import Relogio from "./pages/class2/lesson1";
 import Letreiro from "./pages/class2/lesson2";
 
-// import ContadorGenero from "./pages/class3";
+import  {Contador}  from './pages/class3/Contador';
 
 import Gallery from "./pages/class4/PrimeiroComponente";
 import TodoListAula4 from "./pages/class4/TodoListAula4";
@@ -20,6 +20,16 @@ import Form3 from "./pages/class5/Form3";
 import ListAula5 from "./pages/class5/List";
 import List2Aula5 from "./pages/class5/List2";
 import ShapeEditor from "./pages/class5/ShapeEditor";
+import List3Aula5 from "./pages/class5/List3";
+import CounterList from "./pages/class5/CounterList";
+import List4Aula5 from "./pages/class5/List4";
+import BucketList from "./pages/class5/BucketList";
+import FormQuiz from "./pages/class6/FormQuiz";
+import FormTicket from "./pages/class6/FormTicket";
+import Accordion from "./pages/class6/Accordion";
+import Messenger from "./pages/class6/Messenger";
+
+
 
 function App() {
   return (
@@ -31,7 +41,7 @@ function App() {
         <Route path="/class2/atividade1" element={<Relogio />} />
         <Route path="/class2/atividade2" element={<Letreiro />} />
         {/* Aula 3 */}
-        {/* <Route path="/class3/atividade1" element={<ContadorGenero />} /> */}
+        <Route path="/class3/atividade1" element={<Contador />} />
         {/* Aula 4 */}
         <Route path="/class4/atividade1" element={<Gallery />} />
         <Route path="/class4/atividade2" element={<TodoListAula4 />} />
@@ -48,6 +58,15 @@ function App() {
         <Route path="/class5/atividade8" element={<ListAula5 />} />
         <Route path="/class5/atividade9" element={<List2Aula5 />} />
         <Route path="/class5/atividade10" element={<ShapeEditor />} />
+        <Route path="/class5/atividade11" element={<CounterList/>} />
+        <Route path="/class5/atividade12" element={<List3Aula5 />} />
+        <Route path="/class5/atividade13" element={<List4Aula5 />} />
+        <Route path="/class5/atividade14" element={<BucketList />} />
+        {/* Aula 6 */}
+        <Route path="/class6/atividade1" element={<FormQuiz/>} />
+        <Route path="/class6/atividade2" element={<FormTicket/>} />
+        <Route path="/class6/atividade3" element={<Accordion/>} />
+        <Route path="/class6/atividade4" element={<Messenger/>} />
       </Routes>
     </BrowserRouter>
   );
